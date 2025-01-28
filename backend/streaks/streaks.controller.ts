@@ -12,16 +12,11 @@ export class StreaksController {
     };
   }
 
+  // TODO: Validation, DTO, APIOperation
   @Get(':streakId')
-  // TODO: Validation, DTO
-  async getStreaksByStreak(@Param('streakId', ParseIntPipe) streakId: number) {
-    const streaks =
-      await this.streaksService.getStreaksDataByStreakId(streakId);
+  getStreaksByStreak(@Param('streakId', ParseIntPipe) streakId: number) {
+    const streaks = this.streaksService.getStreaksDataByStreakId(streakId);
 
-    return {
-      activitiesToday: 3,
-      total: 4,
-      days: streaks,
-    };
+    return streaks;
   }
 }
