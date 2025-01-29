@@ -43,3 +43,5 @@ npm run start
 ```
 
 > Production Port is dependent on environmental `PORT` variable. Defaults to 3001
+
+For additional concerns, get in touch with crrmacarse@gmail.com
