@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
+    "build:backend": "nest build",
     "format": "prettier --write \"backend/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:backend": "nest start --watch",
@@ -34,6 +34,7 @@
     "react-dom": "^19.0.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
+    "swr": "^2.3.0",
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
